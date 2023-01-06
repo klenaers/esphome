@@ -72,13 +72,13 @@ CONFIG_SCHEMA = cv.Schema(
             unit_of_measurement=UNIT_KILOWATT,
             accuracy_decimals=3,
             device_class=DEVICE_CLASS_POWER,
-            state_class=STATE_CLASS_TOTAL_INCREASING,
+            state_class=STATE_CLASS_MEASUREMENT,
         ),
          cv.Optional("energy_current_average_demand"): sensor.sensor_schema(
             unit_of_measurement=UNIT_KILOWATT,
             accuracy_decimals=3,
             device_class=DEVICE_CLASS_POWER,
-            state_class=STATE_CLASS_TOTAL_INCREASING,
+            state_class=STATE_CLASS_MEASUREMENT,
         ),
         cv.Optional("total_imported_energy"): sensor.sensor_schema(
             unit_of_measurement=UNIT_KILOVOLT_AMPS_REACTIVE_HOURS,
