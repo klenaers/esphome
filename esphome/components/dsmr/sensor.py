@@ -74,7 +74,7 @@ CONFIG_SCHEMA = cv.Schema(
             device_class=DEVICE_CLASS_POWER,
             state_class=STATE_CLASS_MEASUREMENT,
         ),
-         cv.Optional("energy_current_average_demand"): sensor.sensor_schema(
+        cv.Optional("energy_current_average_demand"): sensor.sensor_schema(
             unit_of_measurement=UNIT_KILOWATT,
             accuracy_decimals=3,
             device_class=DEVICE_CLASS_POWER,
