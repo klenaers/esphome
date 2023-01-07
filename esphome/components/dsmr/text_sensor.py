@@ -22,7 +22,7 @@ CONFIG_SCHEMA = cv.Schema(
         cv.Optional("water_equipment_id"): text_sensor.text_sensor_schema(),
         cv.Optional("sub_equipment_id"): text_sensor.text_sensor_schema(),
         cv.Optional("gas_delivered_text"): text_sensor.text_sensor_schema(),
-        cv.Optional("energy_import_last_13_mmonths"): text_sensor.text_sensor_schema(),
+        cv.Optional("energy_max_demand_import_last_13_mmonths"): text_sensor.text_sensor_schema(),
     }
 ).extend(cv.COMPONENT_SCHEMA)
 
