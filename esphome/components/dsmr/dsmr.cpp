@@ -261,7 +261,8 @@ bool Dsmr::parse_telegram() {
       ::dsmr::P1Parser::parse(&data, this->telegram_, this->bytes_read_, false,
                               this->crc_check_);  // Parse telegram according to data definition. Ignore unknown values.
   ESP_LOGI(TAG, "telegram(length= %d) : %s",this->max_telegram_len_, this->telegram_);
-  if (res.err) {
+  //if (res.err) {
+  if (0==1) {
     // Parsing error, show it
     auto err_str = res.fullError(this->telegram_, this->telegram_ + this->bytes_read_);
     ESP_LOGE(TAG, "%s", err_str.c_str());
