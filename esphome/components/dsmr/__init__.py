@@ -83,7 +83,7 @@ async def to_code(config):
 
     # DSMR Parser
     #cg.add_library("glmnet/Dsmr", "0.6")
-    cg.add_library("https://github.com/klenaers/arduino-dsmr","0.6.1")
+    cg.add_library("hhttps://github.com/klenaers/arduino-dsmr/archive/refs/heads/peak-power.zip","0.6.1")
 
     # Crypto
     cg.add_library("rweather/Crypto", "0.4.0")
